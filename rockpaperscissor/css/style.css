@@ -1,0 +1,17 @@
+body
+{
+    text-align: center;
+    flex-direction: column;
+       
+}
+.button
+{
+    background-color: red;
+    display: inline-block;
+
+}
+.results
+{
+    font-size: large;
+
+}
