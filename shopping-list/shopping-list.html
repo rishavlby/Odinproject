@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shopping list example</title>
+    <style>
+      li { margin-bottom: 10px;
+      }
+
+      li button {font-size: 12px;
+        margin-left: 20px;
+        color: #666;
+      }
+     #track{ background-color: goldenrod;
+            height: 200px;
+            width: 400px;}
+    </style>
+  </head>
+  <body>
+
+    <h1>My shopping list</h1>
+
+    <div>
+      <label for="item">Enter a new item:</label>
+      <input type="text" name="item" id="item">
+      <button>Add item</button>
+    </div>
+
+    <ul>
+          <button id ='button'>click me!</button>
+          <p id ="messagekeys"></p>
+          <p> Move your mouse to see its location</p>
+          <div is ="track"></div>
+          <p id ="log"></p>
+    </ul>
+    <input type="text" id="message">
+    <script>
+
+    //  let btn = document.querySelector('#button');
+
+    // btn.addEventListener('click', () => {
+    //   alert("it was clicked");
+    // });
+  
+    //       addEventListener('DOMContentloaded', (event) => {
+    //   console.log('The DOM id full loaded');
+
+    //   addEventListener('load' ,(event) =>{
+    //     console.log('The page is fully loaded');
+    //   });
+
+    //   addEventListener('beforeunload' ,(event)=> {
+    //     event.preventDefault();
+    //     event.returnValue = '';
+    //   });
+    //   addEventListener('unload', (event) =>{
+
+    //   });
+     
+
+let btnkeys = document.querySelector('#button');
+btnkeys.addEventListener('click' , (e)=>{
+  let keys = [];
+  if(e.shiftKey) keys.push('shift');
+  if(e.ctrlKey) keys.push('ctrl');
+  if(e.altKey) keys.push('alt');
+  if(e.metaKey) keys.push('meta');
+ 
+
+  let msg = document.querySelector('#messagekeys');
+  msg.textContent = `Keys: ${keys.join('+')}`;
+
+});
+
+let track = document.querySelector('#track');
+track.addEventListener('mousemove' , (e) => {
+  let log = document.querySelector('#log');
+  log.innerText =`
+  Screen X/Y : (${e.screenX}, ${e.screenY})
+  Client X/Y : (${e.clientX}, ${e.clientY})
+  `
+});
+
+let textbox = document.getElementById('message');
+textbox.addEventListener('keydown' , (event)=>{
+  console.log(`key = ${event.key}, code =${event.code}`);
+})
+
+
+    </script>
+  </body>
+</html>
