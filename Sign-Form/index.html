@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Login Page - The Odin Project</title>
+<link rel ="stylesheet" href= "css/signform.css">
+
+</head>
+
+<body>
+
+ <div class ="sideimagecontainer">
+<div class = "frontimage">
+<img  src = "img/odin-lined.png" alt ="Background-image" align="center" >
+ 
+<span>ODIN</span>
+</div>
+</div>
+ 
+
+<div class ="secondcontainer">
+   
+<p class = "introtext">
+
+    This is not a real online service! You know you need
+    something like this in your life to help you realize 
+    your deepest dreams.
+    <br>
+    Sign up now to get started
+    <br>
+    <br>
+    you <em>know</em> you want to.
+    <br>
+    <br>
+    
+</p>
+
+<div class = "formcontainer">
+    Let's do this!
+    <form>
+    <p>
+        <label for ="First Name">FIRST NAME</label>
+        <input type="text" id ="First Name">
+    </p>
+
+    <p>
+        <label for ="lastname">LAST NAME</label>
+        <input type="text" id ="lastname">
+    </p>
+
+    <p>
+        <label for ="email">EMAIL</label>
+        <input type="email" id ="email">
+       
+    </p>
+
+   <p>
+        <label for ="phonenumber">PHONE NUMBER</label>
+        <input type="text" id ="phonenumber">
+   </p>
+
+   <p>
+        <label for ="password">PASSWORD</label>
+        <input type="password" id ="password" pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}">
+   </p>
+
+<p>
+    <label for ="confirmpassword">CONFIRM PASSWORD</label>
+    <input type="password" id ="confirmpassword" pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}">
+</p>
+
+</form>
+
+<button type="submit">Create Account</button>
+<p class ="already">Already have an account?<a href ="">Log in</a></p>
+
+</div>
+</div>
+</div>
+
+<script src ="js/myscript.js"> </script>
+</body>
+</html>

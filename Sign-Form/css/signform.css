@@ -1,0 +1,139 @@
+@font-face {
+    font-family: NorseBold;
+    src: url(/Norse-Bold.otf);
+}
+
+body{
+    background-color: black;
+    margin-left: 150px;
+    margin-right: 150px;
+    display: flex;
+    font-weight: bold;
+}
+
+.sideimagecontainer{
+      
+      background: url(/img/image.jpg);
+      width:500px;
+      background-position: center;
+      font-family: NorseBold;
+      font-size: 50px;
+     background-color: grey;
+    
+}
+.frontimage{
+    margin-top: 220px;
+    opacity: 0.5;
+    font-size: 6rem;
+    background-color: grey;
+
+}
+
+img{
+   
+    width:150px;
+    padding-left: 90px;
+    justify-content: center;
+     
+  
+    
+ }
+
+ span{
+    margin-top: 150px;
+ }
+
+form{
+      font-family:  Helvetica, sans-serif;
+      display: flex;
+      flex-wrap:wrap;
+      
+    
+}
+
+.introtext
+{
+    font-size: large;
+    margin-top: 150px;
+    margin-left: 50px;
+}
+
+
+p{
+    background-color: white;
+    font-family: Helvetica;
+   
+    
+}
+
+
+button{
+    background-color: #596D48;
+    margin:5px;
+    padding:20px;
+    color: white;
+    font-size: medium;
+    border: 2px solid ;
+    border-radius: 10px;
+    font-weight: bold;
+}
+
+.secondcontainer
+{
+background-color: white;
+width:1000px;
+height:850px;
+font-size: 1rem;
+
+}
+
+input{
+
+            padding:0.2rem;
+            border:2px solid #E5E7EB;
+            border-radius: 2px white;
+            font-size:18px;
+            margin-right: 110px;
+            display: block;
+            position: relative;
+            
+
+}
+input:focus{
+    border:3px solid rgb(68, 68, 218);
+    
+   
+    
+}
+input[type="password"]:invalid
+{
+   border: 3px solid red;
+   background-color: beige;
+}
+
+input[type="password"]:valid
+{
+    border:3px solid green;
+}
+label{
+    font-size:16px;
+     top: -0.5rem;
+   
+}
+
+.already{
+    font-size:20px;
+     margin-top: 0px;
+}
+.formcontainer
+{
+    margin-left: 100px;
+    width: auto;
+    margin-top: 100px;
+}
+
+a{
+    color:#596D48;
+    font-weight: bold;
+    font-style: none;
+}
