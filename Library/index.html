@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Library</title>
+<link rel ="stylesheet" href= "css/mycss.css">
+
+</head>
+
+<body>
+
+<dialog id ="favdialog">
+    <p>Library</p>
+<button id="displaybooks">Display books</button>
+<button autofocus id ="newbook">Add New Book</button>
+<button id ="removebook">Remove Book</button>
+<button id ="changestatus">Change status</button>
+<button id ="Closebtn">Close</button>
+</dialog>
+<dialog id = "displaybook">
+      <table>
+        
+      </table>
+</dialog>
+<dialog id = "addnewbook">
+    <div class ="form">
+<form class = "newbookform"> 
+    <p><em>New Book Form</em></p>
+    <p>
+    <label>Author</label>
+<input type ="text" id ="author">
+</p>
+
+<p>
+<label>Title</label>
+<input type ="text" id="Title"></p>
+<p>
+<label>Number of Pages</label>
+<input type="text" id="number of pages"></p>
+<p>
+<legend>Reading Status</legend>
+<label>Read</label>
+<input type ="radio" id="read">
+<label>Not read</label>
+<input type ="radio" id="notread">
+</p>
+<p>
+<label>Comments</label>
+<input type = "textarea" id ="notes"></p>
+<button>Submit</button>
+<button id ="newbookcancelbtn">Cancel</button>
+ </form>
+</div>
+</dialog>
+
+
+
+<button id ="showDialog">show Library</button>
+
+
+
+
+
+<script src ="js/myscript.js"> </script>
+
+
+
+</body>
+</html> 
