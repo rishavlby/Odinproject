@@ -6,15 +6,50 @@
       dodgerblue,
       green
     );
-    opacity: 0.75;
+    opacity: 0.55;
   }
-  .form
-  {
-    width: 500px;
-  }
+
+.radio-group {
+  display: flex;
+  gap: 30px; 
+  align-items: center; 
+}
+
+
+.radio-group input[type="radio"] {
+  margin-right: 5px; 
+}
+
+.radio-group label {
+  font-size: 1em; 
+}
 
   input{
-
     margin-left: 10px;
-   
+
+     }
+
+ .table{
+         width:100px;
   }
+
+  #closeDialogBtn {
+         width:90px;
+  }
+
+  #removebook
+  {
+    width:100px;
+  }
+  h2{
+    text-align: center;}
+
+  dialog button{
+    margin:10px;
+  }
+
+table tr.selected {
+  background-color: #b91a1a; 
+  font-weight: bold;
+  color:white;
+}

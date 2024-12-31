@@ -9,45 +9,72 @@
 
 <body>
 
+    <section class="welcome-section">
+        <div class="container">
+            <h1>Welcome to Our Library</h1>
+            <p>Discover a world of knowledge, adventure, and inspiration. Whether you're looking for the latest best-seller or a timeless classic, we have something for everyone. Explore our collection and find your next great read today!</p>
+            <button id ="showDialog">Enter Library</button>
+          
+        </div>
+    </section>
+
+
 <dialog id ="favdialog">
-    <p>Library</p>
+    <h2>Library</h2>
 <button id="displaybooks">Display books</button>
 <button autofocus id ="newbook">Add New Book</button>
-<button id ="removebook">Remove Book</button>
-<button id ="changestatus">Change status</button>
 <button id ="Closebtn">Close</button>
 </dialog>
-<dialog id = "displaybook">
-      <table>
-        
-      </table>
+
+<dialog id = "displaybookdialog">
+        <h2>Book information</h2>
+        <table border ="2" cellpadding="5" cellspacing="0" style="border-collapse: collapse;">
+            <tr>
+                <th>Title</th>
+                <th>Author</th>
+                <th>Pages</th>
+                <th>Read Status</th>
+            </tr>
+         </table>
+        <button id="closeDialogBtn">Close</button>
+        <button id ="removebook">Remove Book</button>
+        <button id ="changestatus">Change status</button>
+        <button id ="newbook">Add New Book</button>
 </dialog>
+
+
+
 <dialog id = "addnewbook">
     <div class ="form">
-<form class = "newbookform"> 
-    <p><em>New Book Form</em></p>
-    <p>
-    <label>Author</label>
-<input type ="text" id ="author">
-</p>
+        <form id = "newbookform"> 
+            <h2>New Book Form</h2>
+    
+        <label>Author</label>
+    <input type ="text" id ="author">
+ 
+<label for ="title">Title</label>
+<input type ="text" id="title" value="title"></p>
 
-<p>
-<label>Title</label>
-<input type ="text" id="Title"></p>
-<p>
 <label>Number of Pages</label>
-<input type="text" id="number of pages"></p>
-<p>
-<legend>Reading Status</legend>
-<label>Read</label>
-<input type ="radio" id="read">
-<label>Not read</label>
-<input type ="radio" id="notread">
-</p>
-<p>
+<input type="text" id="pages"></p>
+
+<fieldset>
+    <legend>Reading Status</legend>
+    <div class="radio-group">
+        <input type="radio" id="true" name="status" value="true" checked>
+        <label for="true">True</label>
+
+        <input type="radio" id="false" name="status" value="false">
+        <label for="false">False</label>
+    </div>
+</fieldset>
+
+
+
+
 <label>Comments</label>
-<input type = "textarea" id ="notes"></p>
-<button>Submit</button>
+<textarea id="notes"></textarea>
+<button type ="submit" id ="sumitEntry">Submit</button>
 <button id ="newbookcancelbtn">Cancel</button>
  </form>
 </div>
@@ -55,7 +82,7 @@
 
 
 
-<button id ="showDialog">show Library</button>
+
 
 
 
