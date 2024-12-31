@@ -48,7 +48,6 @@ closeDialogBtn.addEventListener('click', () => {
   displaydial.close();
 });
 
-
 // Remove book from list
 removebookbtn.addEventListener('click', () => {
   const selectedRow = document.querySelector('tr.selected');
@@ -70,7 +69,6 @@ changestatusbtn.addEventListener('click', () => {
     alert('Please select a row to change the status.');
   }
 });
-
 
 function displaybooks() {
   const table = displaydial.querySelector('table');
@@ -104,7 +102,6 @@ function deleteEntry(index) {
   displaybooks();  
 }
 
-
 function highlightTableRow(row) {
   
   const previouslySelectedRow = document.querySelector('tr.selected');
@@ -114,13 +111,11 @@ function highlightTableRow(row) {
   row.classList.add('selected');
 }
 
-
 function toggleReadStatus(index) {
   const book = myLibrary[index];
   book.read = !book.read;  
   updateTableRow(index);   
 }
-
 
 function updateTableRow(index) {
   const table = displaydial.querySelector('table');
