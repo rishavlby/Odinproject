@@ -1,15 +1,16 @@
 
+function game(gamename="")
+{
+  
+let score=0;
 
-let user = {name:"john", age : 30, status:"single"}
-alert(user.name);
-alert(user.status)
+return function win(){
 
-let key = promot("jatt", "name");
-user[key]=true;
-alert(user[key]);
+  score++;
+  return `your name is ${gamename} ${score}`;
 
-let fruit = prompt("which fruit to buy", "apple");
-let bag = {
-    [fruit]:5
 }
-alert(bag.apple);
+
+
+}
+const playTheGame = game('hockey');
