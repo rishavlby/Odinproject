@@ -20,17 +20,17 @@ addEventListeners() {
     }); 
   }
 
-  getComputerChoice() {
+    getComputerChoice() {
     return this.choice[Math.floor(Math.random()*this.choice.length)];
-        }
+    }
 
-   displayMessage(message){
-    document.getElementById("results").textContent =message;
+    displayMessage(message){
+    document.getElementById("results").textContent = message;
     }
 
    resultMessage(){ 
     return document.getElementById("result2").textContent = `Current Score - Human: ${this.humanScore}, Computer: ${this.computerScore}`;
-      }
+    }
 
    finalresult(finres){
        const rem = document.getElementById("winner");
@@ -40,15 +40,14 @@ addEventListeners() {
     rem.style.display = 'none';},800);
 }; 
 
-resetgame(){
-this.humanScore = 0;
-this.computerScore = 0;
-}
+    resetgame(){
+    this.humanScore = 0;
+    this.computerScore = 0;
+    }
 
 playRound(humanChoice,computerChoice){
 
-if(humanChoice == 'rock' && computerChoice == 'scissor') 
-{ 
+if(humanChoice == 'rock' && computerChoice == 'scissor'){ 
 this.displayMessage("You Win! Rock beats Scissor."); 
 this.humanScore++; 
 } 
@@ -79,7 +78,7 @@ else{
 
 if (this.humanScore + this.computerScore === 5){
        if(this.computerScore>this.humanScore){
-           this.finalresult("Winner is computer : " + this.computerScore );
+           this.finalresult("Winner is computer : " + this.computerScore);
           }
 else if(this.computerScore<this.humanScore){ 
 this.finalresult("Winner is Human : " + this.humanScore);
